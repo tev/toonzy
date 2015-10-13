@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Toonzy RPG Tools</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href='css/toonzy.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="toonzy-logo.png" id="logo" />
+				<button id="generate-character" type="button" class="btn btn-default btn-lg btn-primary">
+				    Reroll! <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				</button>
+			</div>
+			<div class="col-md-4">
+				<div class="speech">
+					<p id="info">&nbsp;</p>
+					<p id="trait">&nbsp;</p>
+					<p id="niche">&nbsp;</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				
+			</div>
+		</div>
+	</div>
+
+
+	<main>
+		<div class="stats">
+			<div class="stat-box" id="str">
+				<div class="stat-name">Strength</div>
+				<div class="stat-value">12</div>
+				<div class="stat-bonus">+ 1</div>
+			</div>
+			<div class="stat-box" id="vit">
+				<div class="stat-name">Vitality</div>
+				<div class="stat-value">12</div>
+				<div class="stat-bonus">+ 1</div>
+			</div>
+			<div class="stat-box" id="acc">
+				<div class="stat-name">Accuracy</div>
+				<div class="stat-value">12</div>
+				<div class="stat-bonus">+ 1</div>
+			</div>
+			<div class="stat-box" id="spd">
+				<div class="stat-name">Speed</div>
+				<div class="stat-value">12</div>
+				<div class="stat-bonus">+ 1</div>
+			</div>
+			<div class="stat-box" id="int">
+				<div class="stat-name">Intelligence</div>
+				<div class="stat-value">12</div>
+				<div class="stat-bonus">+ 1</div>
+			</div>
+			<div class="stat-box" id="chm">
+				<div class="stat-name">Charm</div>
+				<div class="stat-value">12</div>
+				<div class="stat-bonus">+ 1</div>
+			</div>
+			<div class="stat-box" id="per">
+				<div class="stat-name">Perception</div>
+				<div class="stat-value">12</div>
+				<div class="stat-bonus">+ 1</div>
+			</div>
+
+		</div>
+
+		<div class="stats">
+			<div class="stat-box" id="initiative">
+				<div class="stat-name">Initiative</div>
+				<div class="stat-value">12</div>
+			</div>
+			<div class="stat-box" id="movement">
+				<div class="stat-name">Movement</div>
+				<div class="stat-value">12</div>
+			</div>
+			<div class="stat-box" id="defense">
+				<div class="stat-name">Defense</div>
+				<div class="stat-value">12</div>
+			</div>
+			<div class="stat-box" id="health">
+				<div class="stat-name">Health</div>
+				<div class="stat-value">12</div>
+			</div>
+			<div class="stat-box spacer"></div>
+			<div class="stat-box" id="damage">
+				<div class="stat-name">Damage</div>
+				<div class="stat-value">12</div>
+			</div>
+			<div class="stat-box" id="whack">
+				<div class="stat-name">Whack!</div>
+				<div class="stat-value">12</div>
+			</div>
+		</div>
+
+	</main>
+	
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/toonzy-logic.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/toonzy-data.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/toonzy-app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
