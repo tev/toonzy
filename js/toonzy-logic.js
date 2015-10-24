@@ -21,7 +21,13 @@ toonzy.coinFlip = function(flipString) {
 		var coinFlipRegEx = /([\w ]*) or ([\w ]*) \(Flip a coin\)/;
 		coinFlip = flipString.match(coinFlipRegEx);
 		if (coinFlip != null) {
-			flipString = flipString + ': ' + coinFlip[Math.floor( 1 + (2 * Math.random()))];
+			flipString = flipString.replace(coinFlipRegEx,'');
+			if (flipString.trim().length > 0) {
+				flipString = flipString + ': ' + coinFlip[Math.floor( 1 + (2 * Math.random()))];
+			} else {
+				flipString = coinFlip[Math.floor( 1 + (2 * Math.random()))];
+			}
+			
 		}
 	}
 	return flipString;
@@ -38,7 +44,13 @@ toonzy.tableLookup = function(tableString) {
 			var newSubtype = toonzy.roller(toonzy.data.character[lookupKey]);
 			newSubtype = toonzy.coinFlip(newSubtype);
 			newSubtype = toonzy.tableLookup(newSubtype);
-			tableString = tableString + ': ' + newSubtype;
+			tableString = tableString.replace(subTableRegEx,'');
+			if (tableString.trim().length > 0) {
+				tableString = tableString + ': ' + newSubtype;
+			} else {
+				tableString = newSubtype;
+			}
+			
 		}
 	};
 
