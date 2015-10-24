@@ -34,7 +34,7 @@ toonzy.coinFlip = function(flipString) {
 }
 
 toonzy.tableLookup = function(tableString) {
-	var subTableRegEx = /Roll on ([\w ]*) Table/;
+	var subTableRegEx = /[\(]?Roll on ([\w ]*) Table[\)]?/;
 	var lookup = tableString.match(subTableRegEx);
 	if (lookup != null) {
 		lookupKey = lookup[1].toLowerCase().replace(/\s/g, '');
